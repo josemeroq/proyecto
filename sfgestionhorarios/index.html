@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestión de Horarios</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Gestión de Horarios de la ULEAM</h1>
+		<form id="formulario">
+			<label for="carrera">Carrera:</label>
+			<input type="text" id="carrera" name="carrera" placeholder="Ingrese su carrera">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+			<label for="nivel">Curso:</label>
+			<input type="text" id="nivel" name="nivel" placeholder="Ingrese el nivel o semestre">
+            <label for="aula">Aula:</label>
+			<input type="text" id="aula" name="aula" placeholder="Ingrese el aula">
+			<label for="dia">Día:</label>
+			<select id="dia" name="dia">
+				<option value="">Seleccione un día</option>
+				<option value="lunes">Lunes</option>
+				<option value="martes">Martes</option>
+				<option value="miercoles">Miércoles</option>
+				<option value="jueves">Jueves</option>
+				<option value="viernes">Viernes</option>
+			</select>
+			<label for="horaini">Hora Inicio:</label>
+			<input type="time" id="horaini" name="horaini">
+            <label for="horafin">Hora Fin:</label>
+			<input type="time" id="horafin" name="horafin">
+			<button type="submit"><b>Agregar Horario</b></button>
+		</form>
+		<table id="tabla-horarios">
+			<thead>
+				<tr>
+					<th>Carrera</th>
+      				<th>Nombres</th>
+      				<th>Nivel</th>
+                    <th>Aula</th>
+					<th>Día</th>
+      				<th>Hora Ini.</th>
+                    <th>Hora Fin.</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Mdedicina</td>
+					<td>Mateo Zambrano</td>
+                    <td>Primer Nivel A </td>
+                    <td>Lab 456</td>
+                    <td>Lunes</td>
+                    <td>9:00</td>
+                    <td>11:00</td>
+                </tr>
+            </tbody>
+         </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
